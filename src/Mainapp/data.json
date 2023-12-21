@@ -1,0 +1,28 @@
+
+[
+    {
+      "employeeName": "Arjun",
+      "dateOfBirth": "16-11-2000",
+      "employeeId": "1",
+      "role": "Software Engineer"
+    },
+    {
+      "employeeName": "Mahesh",
+      "dateOfBirth": "15-01-2000",
+      "employeeId": "2",
+      "role": "Web Developer"
+    },
+    {
+      "employeeName": "Soumyadip",
+      "dateOfBirth": "06-05-1999",
+      "employeeId": "3",
+      "role": "Software Engineer"
+    },
+    {
+      "employeeName": "Emily",
+      "dateOfBirth": "12-08-1992",
+      "employeeId": "4",
+      "role": "UX Designer"
+    }
+  ]
+  

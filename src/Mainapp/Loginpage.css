@@ -1,0 +1,107 @@
+.container{
+    background-color: black;
+    height: 800px;
+    
+}
+.logo{
+    padding-top: 50px;
+    mix-blend-mode: normal;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    margin-top: 20px;
+    /* color: #08220ccc; */
+    /* border: 2px, solid, red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font: normal normal normal 16px/21px Mulish;
+    letter-spacing: 0.02px;
+    color: #07360dcc;
+    opacity: 1;
+}
+.UserName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.UserName input{
+    background: #535353 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 3px #838282, 3px 3px 3px #4A494947;
+    mix-blend-mode: normal;
+    opacity: 1;
+    border-radius: 15px;
+    height: 32px;
+    width: 238px;
+    align-items: center;
+    display: flex;
+    top: 61px;
+    justify-content: center;
+}
+
+.PassWord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.PassWord input{
+    background: #535353 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 3px #838282, 3px 3px 3px #4A494947;
+    mix-blend-mode: normal;
+    opacity: 1;
+    border-radius: 15px;
+    height: 32px;
+    width: 238px;
+    align-items: center;
+    display: flex;
+    top: 61px;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: normal;
+    border: 2px solid #8CFF0026;
+    opacity: 1;
+    color:#FFFFFF8C;
+    width: 245px;
+    height: 37px;
+    border-radius: 15px ;
+    margin-bottom: 20px;
+}
+.forgetButton{
+    display: flex;
+    justify-content: center;
+}
+.forgetButton button{
+    text-align: center;
+    font: normal normal normal 15px/20px Mulish;
+    letter-spacing: 0.02px;
+    color: #36A546;
+    opacity: 1;
+    border: #000000;
+    background-color: #000000;
+}
+.error{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 461px){
+    .container{
+        height: 915px;
+    }
+    .logo{
+        padding-top: 130px;
+    }
+}
