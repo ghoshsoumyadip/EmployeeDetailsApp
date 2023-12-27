@@ -5,6 +5,7 @@ import photo2 from '../asset/moptro logo.png'
 import './EmployeeList.css';
 import homeicon from '../asset/homeicon.png'
 import dashicon from '../asset/dashboardicon.png'
+import searchicon from '../asset/searchicon.png'
 import { Link } from 'react-router-dom';
 
 
@@ -31,26 +32,48 @@ function EmployeeList() {
                 <h4>4</h4>
             </div>
             <div className="sc">
-            <input
-             type="text"
-             placeholder="Search with name"
-             value={searchQuery}
-             onChange={handleSearchChange}
-             className="search-input"
-            
-            />
-            <ul className="employee-list" style={{margin: "0.8rem"}}>
-             {filteredEmployees.map((employee) => (
-             <li key={employee.employeeId} className="employee-item">
-              {/* <span className='number'>{employee.employeeId}</span><br></br> */}
-            <strong>EMP ID :</strong> {employee.employeeId}<span className='number' id='number'>{employee.employeeId}</span> <br /> 
-            <strong>Name :</strong> {employee.employeeName} <br />
-            <strong>DOB :</strong> <span id='dob'>{employee.dateOfBirth}</span> <br />
-            <strong>Role :</strong> <span id='role'>{employee.role} </span>
-                 </li>
+              <div className="searchBar">
+              <input
+                 type="text"
+                 placeholder="Search with name"
+                 value={searchQuery}
+                 onChange={handleSearchChange}
+                 className="search-input"
+                 id='searchInput'
+              />
+              <img src={searchicon} alt="" className="searchicon" />
+              </div>
+            <div className="el">
+            <div className="employee-list-container">
+              <ul className="employee-list">
+                {filteredEmployees.map((employee) => (
+                  <li key={employee.employeeId} className="employee-item">
+                    <span className="firstrow">
+                      <p>EMP ID  :</p> <strong className='eid'>{employee.employeeId}</strong>
+                      <p className="number" id="number">
+                        {employee.employeeId}
+                      </p>
+                    </span>
+                    <span className="name">
+                      <p>Name</p>
+                      <p id='sign1'>:</p> 
+                      <p id='name'>{employee.employeeName}</p></span>
+                    <span className="dob">
+                      <p>DOB</p>
+                      <p id='sign2'>:</p>
+                      <span id="dob">{employee.dateOfBirth}</span> 
+                    </span>
+                    <span className="role">
+                      <p>Role</p>
+                      <p id='sign3'>:</p>
+                      <span id="role">{employee.role} </span>
+                    </span>
+                  </li>
                 ))}
-            </ul>
+              </ul>
             </div>
+          </div>
+        </div>
             <div className="tc">
             <div className="home">
                 <Link to="/Homepage">
@@ -65,9 +88,6 @@ function EmployeeList() {
             </div>
     </div>
     </div>
-
-    
   );
 }
-
 export default EmployeeList;

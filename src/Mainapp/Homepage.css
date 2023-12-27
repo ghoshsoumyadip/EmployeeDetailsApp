@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     background-color: black;
-    height: 750px;
-
+    height: 731px;
+    
 }
 .contain{
     background-color: black;
     width: 340px;
+    height: fit-content;
 }
 .fp{
     display: flex;
@@ -222,9 +223,6 @@
     margin-left: 10px;
 }
 
-
-
-
 .mc61{
     display: flex;  
     height: 30px;
@@ -258,6 +256,8 @@
 .thirdcontain{
     margin-top: 20px;
     display: flex;
+    /* justify-content: end; */
+    /* align-items: end; */
     /* border: 1px solid red; */
     margin-left: 8px;
     width: 320px;

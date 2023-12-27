@@ -42,7 +42,12 @@
     top: 61px;
     justify-content: center;
 }
-
+#un{
+    color: white;
+}
+#pw{
+    color: white;
+}
 .PassWord{
     display: flex;
     justify-content: center;
@@ -91,6 +96,7 @@
     background-color: #000000;
 }
 .error{
+    color: red;
     display: flex;
     justify-content: center;
 }

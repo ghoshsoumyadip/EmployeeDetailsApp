@@ -23,7 +23,7 @@ const Loginpage = () => {
   return (
     <div className="container">
         <div className="logo">
-            <img src={photo1} alt="" />
+            <img src={photo1} alt="grrendine" />
         </div>
         <h3 className="heading">We are Electric</h3>
       <form onSubmit={handleSubmit}>
@@ -34,6 +34,7 @@ const Loginpage = () => {
             placeholder='   E-mail'
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            id='un'
           />
         </div>
         <div className="PassWord">
@@ -43,6 +44,7 @@ const Loginpage = () => {
             placeholder='   Password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            id='pw'
           />
         </div>
         <div className="button">
@@ -53,7 +55,7 @@ const Loginpage = () => {
         <button>Forget Password?</button>
       </div>
       <div className="error">
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {error && <p>{error}</p>}
       </div>
       
     </div>
